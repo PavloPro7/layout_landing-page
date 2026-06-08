@@ -3,6 +3,7 @@
 }
 
 .phone__number {
+  text-decoration: none;
   align-self: center;
   font-family: Inter, sans-serif;
   letter-spacing: 2px;
@@ -16,8 +17,14 @@
   max-width: 0;
 }
 
-.phone:hover .phone__number {
-  opacity: 1;
-  max-width: fit-content;
-  margin-right: 8px;
+.phone__number:hover {
+  color: #f98921;
+}
+
+@media (min-width: 1260px) {
+  .phone:hover .phone__number {
+    opacity: 1;
+    max-width: fit-content;
+    margin-right: 8px;
+  }
 }
