@@ -1,0 +1,35 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+.main-title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1;
+
+  @media (min-width: 744px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 1260px) {
+    font-size: 48px;
+  }
+}
+
+.main__recommended-list {
+  margin: 48px 0 0;
+
+  @media (min-width: 744px) {
+    margin: 56px 0 0;
+  }
+}
+
+.main__categories-list {
+  margin: 48px 0 0;
+
+  @media (min-width: 744px) {
+    margin: 56px 0 0;
+  }
+}

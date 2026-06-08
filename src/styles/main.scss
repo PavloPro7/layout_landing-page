@@ -1,3 +1,35 @@
-body {
-  margin: 0;
+@import 'blocks/page.css';
+@import 'blocks/top-bar.css';
+@import 'blocks/header.css';
+@import 'blocks/menu.css';
+@import 'blocks/nav.css';
+@import 'blocks/icon.css';
+@import 'blocks/main.css';
+@import 'blocks/footer.css';
+@import 'blocks/recommended.css';
+@import 'blocks/categories.css';
+@import 'blocks/about-us.css';
+@import 'blocks/form.css';
+@import 'blocks/phone.css';
+
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f98921;
+}
+
+.btn:hover {
+  background-color: #1b2129;
+}
+
+.btn:active {
+  background-color: #010810;
 }

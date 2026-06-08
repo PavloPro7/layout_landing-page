@@ -1,0 +1,45 @@
+/* #region header */
+
+.header {
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url('../../images/header-bg-mobile.png');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 1;
+}
+
+.header__bottom {
+  padding: 0 20px 40px;
+
+  @media (min-width: 744px) {
+    padding: 0 72px 64px;
+  }
+
+  @media (min-width: 1260px) {
+    padding: 0 120px 64px;
+  }
+}
+
+.header__title {
+  margin: 0;
+  color: #fff;
+  line-height: 100%;
+  font-size: 36px;
+
+  @media (min-width: 744px) {
+    font-size: 48px;
+  }
+
+  @media (min-width: 1260px) {
+    font-size: 56px;
+  }
+}
+
+/* #endregion */
