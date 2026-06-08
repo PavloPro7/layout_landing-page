@@ -35,6 +35,15 @@
   color: #1b2129;
 }
 
+.form__input:autofill {
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.15px;
+  font-weight: 400;
+  box-shadow: 0 0 0 30px #f9f9f9 inset;
+  -webkit-text-fill-color: #191919;
+}
+
 .form__input--textarea {
   field-sizing: content;
   min-height: 148px;

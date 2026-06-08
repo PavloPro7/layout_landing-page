@@ -12,10 +12,6 @@
   transition: transform 0.4s ease-in-out;
 }
 
-.about-us__picture:hover .about-us__img {
-  transform: scale(1.08);
-}
-
 .about-us__content {
   display: flex;
   padding: 48px 20px;
