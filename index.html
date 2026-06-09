@@ -455,81 +455,85 @@
     </main>
 
     <footer class="footer">
-      <div
-        class="footer__row"
-        id="contacts"
-      >
-        <h2 class="main-title contacts__title">Contact us</h2>
-
-        <form
-          class="form footer__form"
-          onsubmit="this.reset(); return false;"
+      <h2 class="main-title contacts__title">Contact us</h2>
+      <div class="footer__wrapper">
+        <div
+          class="footer__row"
+          id="contacts"
         >
-          <input
-            class="form__input"
-            type="text"
-            name="name"
-            placeholder="Name"
-            autocomplete="given-name"
-            required
-          />
-          <input
-            class="form__input"
-            type="email"
-            name="email"
-            placeholder="Email"
-            autocomplete="email"
-            required
-          />
-          <textarea
-            class="form__input form__input--textarea"
-            name="message"
-            placeholder="Message"
-          ></textarea>
-          <button
-            class="form__submit btn"
-            type="submit"
-          >
-            Send
-          </button>
-        </form>
-      </div>
 
-      <ul class="footer__list footer__row">
-        <li class="footer__item">
-          <span class="footer__title">Phone</span>
-          <a
-            href="tel:+1 234 5555-55-55"
-            class="footer__link"
+
+          <form
+            class="form footer__form"
+            onsubmit="this.reset(); return false;"
           >
-            +1 234 5555-55-55
-          </a>
-        </li>
-        <li class="footer__item">
-          <span class="footer__title">Email</span>
-          <a
-            href="mailto:hello@bang&olufsen.com"
-            class="footer__link"
-          >
-            hello@bang&olufsen.com
-          </a>
-        </li>
-        <li class="footer__item">
-          <span class="footer__title">Address</span>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query==400+first+ave+suite+700+Minneapolis+MN+55401"
-            class="footer__link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            400 first ave.
-            <br />
-            suite 700
-            <br />
-            Minneapolis, MN 55401
-          </a>
-        </li>
-      </ul>
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              placeholder="Name"
+              autocomplete="given-name"
+              required
+            />
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+            />
+            <textarea
+              class="form__input form__input--textarea"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button
+              class="form__submit btn"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+
+        <ul class="footer__list footer__row">
+          <li class="footer__item">
+            <span class="footer__title">Phone</span>
+            <a
+              href="tel:+1 234 5555-55-55"
+              class="footer__link"
+            >
+              +1 234 5555-55-55
+            </a>
+          </li>
+          <li class="footer__item">
+            <span class="footer__title">Email</span>
+            <a
+              href="mailto:hello@bang&olufsen.com"
+              class="footer__link"
+            >
+              hello@bang&olufsen.com
+            </a>
+          </li>
+          <li class="footer__item">
+            <span class="footer__title">Address</span>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query==400+first+ave+suite+700+Minneapolis+MN+55401"
+              class="footer__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              400 first ave.
+              <br />
+              suite 700
+              <br />
+              Minneapolis, MN 55401
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

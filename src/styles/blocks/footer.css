@@ -2,15 +2,27 @@
   padding: 64px 20px;
   display: flex;
   flex-direction: column;
-  gap: 48px;
 
   @media (min-width: 744px) {
     padding: 120px 74px;
-    gap: 80px;
   }
 
   @media (min-width: 1260px) {
     padding: 120px;
+  }
+}
+
+.footer__wrapper {
+  margin: 48px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @media (min-width: 744px) {
+    gap: 80px;
+  }
+
+  @media (min-width: 1260px) {
     flex-direction: row;
     gap: 112px;
   }
@@ -20,10 +32,6 @@
   background-color: #fff;
   z-index: 1;
   flex: 1;
-}
-
-.footer__form {
-  margin: 48px 0 0;
 }
 
 .footer__list {
