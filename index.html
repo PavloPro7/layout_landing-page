@@ -1,0 +1,536 @@
+<!-- #region head -->
+<!doctype html>
+<html
+  lang="en"
+  class="page"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>BANG & OLUFSEN</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/layout_landing-page/assets/logo-favicon-Cm9zfnHR.svg"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="src/scripts/main.js"
+      defer
+    ></script>
+    <link rel="stylesheet" crossorigin href="/layout_landing-page/assets/index-ZIto610y.css">
+  </head>
+  <!-- #endregion -->
+  <body class="page__body">
+    <header class="header">
+      <div class="top-bar">
+        <a href="#">
+          <picture class="top-bar__picture">
+            <source
+              media="(min-width: 744px)"
+              srcset="data:image/png;base64,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"
+            />
+            <img
+              class="top-bar__logo"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOQAAAAYCAYAAADqB1HvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAADHFJREFUeAHtXAuwVlUV/rh4FUiIAEGLYBACRQSdMqqZkJ4qphWpWaPl0PTWbJhsyrGH1BA11DBl1lRYaGbFBA6lVibdMhsqFXMkklIuAyEpyPsh99X+OmvNXv++e5+z//9eCab/m1lzzn/2Y+3HWnutvfa+F2iiiSaaaKKJJo4sWoLfA5CH3HwpPi0ZZerl0ShaErz7k/+AirSc8eivuRrQRx45ba3KWzW+qbSBqA8DMtpT1sboN004z9ELHXWZxG5Hux094ahdvh/nqBPVYPkeR692NN7RIEe3ybfujPLjHL3O0T5HL3L0Aynblcj/duGx1dHvUN4uSF3DHc1xdK60EcLvSUf3O2pztBfFoOa0OeTTIu19h6N5jgY7Wu1oofCHeTYC25eXOLrU0ascjXJ00NE6Rysc/VnyVc3dNEdnoxDMHyJvntnHd8pzvaOHK/Kf42iy1L0c8XG9wNEwpMecvPY4uieS1uqoA4UsXOLozY5e7OiAo8cd/RrF3D6H+NhTDyhvKTkjhjq6y9G/I2mzHY2Rth9y9HMU4xmrj32ci2Ie73W0xSbukwamaL+jz0je41ANMjk+qON9yMdHgrJ3mHpjOCD51pXU2SrPEY4eQHl/lS5EY9DVdkOi3lHoG3QORjp6FOV9oPC+TfK3ltT5XVNmKPIwyJS5MyP/PSb/CYk8z6B6XrZFyumYcHHuLin7eaSxNYM3aW6i/Pog3yuQltnpJt+8sBPUzikoVo67HQ2R76NRrJoc+AUoVuAL4S1gCkz7hPnNAfqKo6UZZYk9QdnLpb6tifxcMGiBnkmks59cOWlFfgq/+vLbGkdrHR1GsTpORDGQJzp6FvWD/eOKSKWfhKKvB6Sulzr6sKPtyBuHGGghaGFeIzx09aU3Q4HfiMLbeb2j0xy9wNFKFBbpMqQtpY6dCkkOmI8yQ+XalpH/aXkeQpoHx2aUtHEzehsA9r89Uo7534DCK+iUcrSItNqUjVei8NjuQxrkfUoJb4Jjm5KLHead/aMuUYdiVvKwed8XVvR3qWATeoOd2SKNZJ4zUQ71m3dL/gXSGL7PQt7+5ArJT5662q2VtJivr6tqWyRN+c2VPCoMn0W5xZjv6HQ0hvHw7vlfzPcp8mxF42B/TkVtX96fyEv3kJPdIfm+ZuoIsdC0+UTk4QTThm9n5F8meelSH5/Io1bmEZQjVp6LgsrahEj6cGlzSgbV2/gbqhHbH/4BtfNSY/0CnGbyXBYmqkL+K1KQjR9vCl+HarwVfvUk1snvB02dZVCFpCBdaXi/NlG2SiFHo3agzpa01EZ+YFC+XlwE3+bxUl9LH+pTaB1cvXUf9Eb5NjCSt0W+s9+HTXuOBYXMUQqLkfBj/iP5Vu9Yq0L+A41BFZJxjG/B6wAtbTg/UYXMjWrtMu9l7ozWt1ie35PnJ+X5chQBiFywIz+Dt453Cv96ImLMv0zeKUDvkfo06BJDV1C+XljX+Typr6UP9SmoLPQyxqIQaAYXfoO4S6SeBZ90X1vhFacvbThaYZVvkjzridr2J8j/o/LOeaJnwvnJXiBSFlI7NAtem2eU1EOGZ5q8Y+FXag0c5axeV5g6TpV69PcHI/lTFpI86HJ3C+ketN4Qdz3QfjFCq1Zsdj/yXQk/FtzvVgmdpjMqqNG/mHU61i0kwdiDuudflW+5Rz9EroVMya5ayKfk9xfg52p40I4sC9kZMOWA82igTb4xbP9XpM9RWPlN8ptWaAv8JOt3Mh+C+s66WM8K+f11FKt9jnCT9zT4s6lb5bu1JlVR43qVqEd4cRGj0HFMf4siBN+FvCh1Gc6RJ72WJ1Bt7TSAtQJ+Tifg2ADbOzQgHhdw/mNKdhWK8aXCMwZAA/MmFGPAuuqZyxhv0iDkyy7jFPvlfYW0o3RxCBNpiRhB2oliteEqT7eICnEDiigWO5wSAp7BzJL3+fJUAV0kvzko1yD/bE/L616SQv4N5LsAU837A5F0Ksw8ae+1hq5HcRZadiaVAgWGCxIXMI1q/srRxfARwEbAsRsp75vlmet+PmTex+LoBvtEC8Kx2hUQg4U8ggvlh2NKoWcUW70ixg447vSgKJc5C6J6HjHe1Im7UJ/sXinvlKUzkDlf6rKmzm+4QdVASKxDqhg3S34N/4aBjN9L+u7ge4jQZdV815vvI039ZUGdD5ky58bZ/XewY/3+CeqHjk8bfGBK3TQ+L5X0VpOX/chZXLgYqYv4IOrDu+H79ZZI+tHksuoWoydBixNlNXpNw7Aavj8a0Fol6SmlfDSD9xqkEbqsapHb5fsm+c25znJZGTbmuRXPYsahOHfkIFKoeZ7DAEIn4qafden+7kZ56kqiq8LV8qTbMQf56JH6KTR75dtK5K1U2837KYk8DD7xJtEtjr4DbxV3oD7oGeHtKJSf7ePknIXC1eGekuegXHA6JC8XwxFSvkopO03bhqE+jDbvu/G/xYCMdF6qUFm0ROv+uUQdHfKdCzQDWewzA4FUVI49o9+c386SNvD7xgRvBiTPR77Lql6cXjChTvGSRqWVTAV1lPEF8Nr86UQd9nYNle2igHgUMhOFQvUIT8vDIrSQtj1zTNpZ8r3MQtqV6NZIeuxMUFf9m1E/JsJbxqfN99NRe/TCc1G6kXpudjLyoPtGXjbgSp8rHD+GH4dxkfRGLKS12Ldl5F+O2rbH0JegjoUN5syEP4LQAEsM/XXs8ZT5pm24T9LUoExFxEIqys4htUIy0RU/ls4onq7gPSXUDX/JgAfX9SikWuZ/Spruo7YjrZAss094UniqAkJ0w3TiGlHIxfBtP1l4KT9VVr3qp64RBSFXuZaa+mdmlFHeelEjZR0bUUhC3f01GXkfkbxlt3r6SyEVKp83wo9b6krk86GQ2obhhv+nHJ2EDJc1BjWvHHhOPifLrm6cQG5Y9YoQgxkMnvwxQW2Sj/UugQ/a5EBdgPPlN90X7m23VZS5RXhS2W5H/0Q7U5gsz53Srm74c8gnUYzTYMmj7tF0lAfLYPJrOJ/1fl/KpPqiZ61Xwbu4y9G/WC/PGYgfgBMa4ZwmvzfgyEEjrPebb0NwZME5ov4skd8LUCF/ZS4rSbW7O8ijCv0Yqlc+i1/CW4dh6K2QKQtped4t6XQL21FuIdn55+At3yJTV8i7rxZyiWn7eHhhVBeK7dVAT3fQnqpFQvvOgI56Il9GvC+a92WoddeGIr4QN2oh7U2q+QFvQhX0BpPvkpL6GrWQuvVQmQ35rzL8pyfqeL4spLZDb03plk2DTUmXVV1ADiiFgyvJbBRnKVr4i6YcOz4ZvqNXoxosc4YpsyiSp0whtX1DUSvUKYVUnlNQu4fjhM9AXCFVYRpRyHHwCnBYeFBYaB32m7oZwd0NryjLMuvnpDJA1GXKtqF3wIp5Po5aZdS/+qi6Okd3igvl8IB4+X4wvJCr4u2Bl49rgvopR9dJGvNsC8qG6IvL+jEU57TWSnOf+03DX4N8sTGwCsl2D4/QCKS3F2UKqbCyrbLbSyEfNxn0vGU/aq9f8Wn/tk4bZFeesou7Cp2ITVIv+di7nmGjYwqpPBYG7WtDOU/WdRC1e1ru5+hK0o3ieSsnTa3PUtQHbdeX4AWgx9Snv/WSAxcVVdBcAVQLQOXYE/SF+3jOJcdW9+k6Nu+S8ikrrGPZAST3/6RfRNozJijLBWCD0CEzBmyLPa6KoS8K2W74bxT+2iYdj4kov1xedexhF7YQVQqpCwXTbayll0LugB80HTg+KUCc9D+h+Dszwk6ovdJ2B+rD5ajd5Fp8wKRNTpTXzu1F778IicG6dDzP3IbyQedCkWPxQ6jrND9SJ8fzWpOP7eGf86yWb7n7Wr2OSNBj2Yl4HyiYPKoak1H/TfAKnCKmr4q0haA3lfo70y7p42D0dilDbJYy7agfD5XwpzEZFbQ5xEaU91/H4OJE+bWSXnZcxr7PQO1C/V6bSFAows24une6wulA2rM/7jV0g0xXQM/hqqCXoU+CPxPaafhQWDUI8SzS543ql6v7ytXwAMpv19i/B6Sbx2ORCcKX3gEFYiN85JYuz2HUB/3LdY4Nj3wmoYgw3it1aRvsmDbCx/aF1p/3iBnZ5WJCS8O/suH8tcALZwxMHyTtLTvbZb6DUqcdY90nsy2UJe7R9E/NaLEfljYdBy+EqfqHmbr2If+mlI4f3UpuD6ZKO8n/MXhPTJUqhMrRQKTbp/l2wVtc+53j1yo89iA+lvofKPSvU/Q/IHSgnG8TTTTRRBNN/B/jPzuUoynf1s9fAAAAAElFTkSuQmCC"
+              alt="B&O logo"
+            />
+          </picture>
+        </a>
+
+        <div class="top-bar__icons">
+          <div class="phone">
+            <a
+              href="tel:+1 234 5555-55-55"
+              class="phone__number"
+            >
+              +1 234 5555-55-55
+            </a>
+            <a
+              href="tel:+1 234 5555-55-55"
+              class="icon icon--phone"
+            ></a>
+          </div>
+
+          <a
+            href="#menu"
+            class="icon icon--menu"
+          ></a>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <h1 class="header__title">
+          Your senses.
+          <br />
+          Set free.
+        </h1>
+      </div>
+    </header>
+
+    <aside
+      class="page__menu menu"
+      id="menu"
+    >
+      <div class="top-bar menu__top">
+        <a href="#">
+          <picture class="top-bar__picture">
+            <source
+              media="(min-width: 744px)"
+              srcset="data:image/png;base64,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"
+            />
+            <img
+              class="top-bar__logo"
+              src="data:image/png;base64,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"
+              alt="B&O logo"
+            />
+          </picture>
+        </a>
+
+        <a
+          href="#"
+          class="icon icon--close"
+        ></a>
+      </div>
+
+      <div class="menu__content">
+        <nav class="nav menu__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#recommended"
+              >
+                Recommended
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#categories"
+              >
+                Categories
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#about-us"
+              >
+                About Us
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#contacts"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a
+          href="tel:+1 234 5555-55-55"
+          class="menu__phone-number"
+        >
+          +1 234 5555-55-55
+        </a>
+
+        <a
+          href="tel:+1 234 5555-55-55"
+          class="menu__call-to-order"
+        >
+          Call to order
+        </a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section
+        class="recommended main__section"
+        id="recommended"
+      >
+        <h2 class="main-title recommended__title">Recommended</h2>
+
+        <ul class="main__recommended-list recommended__list">
+          <li class="recommended__item">
+            <a href="#">
+              <picture class="recommended__picture">
+                <source
+                  media="(min-width: 744px)"
+                  srcset="/layout_landing-page/assets/beosund-a5-D-mgw-im.png"
+                />
+
+                <img
+                  class="recommended__img"
+                  src="/layout_landing-page/assets/beosund-a5-mobile-D1oEdhNj.png"
+                  alt="beosund-a5"
+                />
+              </picture>
+            </a>
+
+            <h3 class="recommended__item-title">BEOSOUND A5</h3>
+            <p class="recommended__desc">
+              Huge sound anywhere – in the home or outdoors. Beosound A5 is a
+              Wi-Fi and Bluetooth speaker with long-lasting battery and wireless
+              charging built in.
+            </p>
+            <span class="recommended__price">$ 1299.00</span>
+          </li>
+
+          <li class="recommended__item">
+            <a href="#">
+              <picture class="recommended__picture">
+                <source
+                  media="(min-width: 744px)"
+                  srcset="/layout_landing-page/assets/beoplay-hx-DjvwBjST.png"
+                />
+
+                <img
+                  class="recommended__img"
+                  src="/layout_landing-page/assets/beoplay-hx-mobile--qUdffvV.png"
+                  alt="beoblay-hx"
+                />
+              </picture>
+            </a>
+
+            <h3 class="recommended__item-title">BEOPLAY HX</h3>
+            <p class="recommended__desc">
+              Wireless noise-cancelling headphones. Listen in comfort whether
+              you're on a call, working from home or taking a moment for
+              yourself.
+            </p>
+            <span class="recommended__price">$ 499.00</span>
+          </li>
+
+          <li class="recommended__item">
+            <a href="#">
+              <picture class="recommended__picture">
+                <source
+                  media="(min-width: 744px)"
+                  srcset="/layout_landing-page/assets/beosound-theatre-CdgALNF4.png"
+                />
+
+                <img
+                  class="recommended__img"
+                  src="/layout_landing-page/assets/beosound-theatre-mobile-DuEAJ2nq.png"
+                  alt="beosound-theatre"
+                />
+              </picture>
+            </a>
+
+            <h3 class="recommended__item-title">BEOSOUND THEATRE</h3>
+            <p class="recommended__desc">
+              Four patent-pending acoustic innovations in one sleek soundbar
+              envelop you in sound from every angle. Made to fit any TV, and
+              last for generations.
+            </p>
+            <span class="recommended__price">$ 3199.00</span>
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="categories main__section"
+        id="categories"
+      >
+        <h2 class="main-title">
+          Sound. Vision.
+          <br />
+          It’s your pick.
+        </h2>
+
+        <ul class="categories__list main__categories-list">
+          <li class="categories__item">
+            <div class="categories__pictures">
+              <a
+                href="#"
+                class="categories__link"
+              >
+                <picture class="categories__picture">
+                  <source
+                    media="(min-width: 1260px)"
+                    srcset="/layout_landing-page/assets/speaker-1-G987eVDJ.png"
+                  />
+                  <source
+                    media="(min-width: 744px)"
+                    srcset="/layout_landing-page/assets/speaker-1-tablet-DMxJGFfc.png"
+                  />
+                  <img
+                    class="categories__img"
+                    src="/layout_landing-page/assets/speaker-1-mobile-Exnjh0Lg.png"
+                    alt="speaker-1"
+                  />
+                </picture>
+              </a>
+
+              <a
+                href="#"
+                class="categories__link"
+              >
+                <picture class="categories__picture">
+                  <source
+                    media="(min-width: 1260px)"
+                    srcset="/layout_landing-page/assets/speaker-2-CBBWtzZU.png"
+                  />
+                  <source
+                    media="(min-width: 744px)"
+                    srcset="/layout_landing-page/assets/speaker-2-tablet-DZXizGuq.png"
+                  />
+                  <img
+                    class="categories__img"
+                    src="/layout_landing-page/assets/speaker-2-mobile-DdfM7Oqq.png"
+                    alt="speaker-2"
+                  />
+                </picture>
+              </a>
+            </div>
+
+            <h3 class="categories__item-title">Portable speakers</h3>
+          </li>
+
+          <li class="categories__item">
+            <div class="categories__pictures">
+              <a
+                href="#"
+                class="categories__link"
+              >
+                <picture class="categories__picture">
+                  <source
+                    media="(min-width: 1260px)"
+                    srcset="/layout_landing-page/assets/earphone-1-DfYTU2CT.png"
+                  />
+                  <source
+                    media="(min-width: 744px)"
+                    srcset="/layout_landing-page/assets/earphone-1-tablet-hXUo3lfz.png"
+                  />
+                  <img
+                    class="categories__img"
+                    src="/layout_landing-page/assets/earphone-1-mobile-HZr1OUez.png"
+                    alt="earphone-1"
+                  />
+                </picture>
+              </a>
+
+              <a
+                href="#"
+                class="categories__link"
+              >
+                <picture class="categories__picture">
+                  <source
+                    media="(min-width: 1260px)"
+                    srcset="/layout_landing-page/assets/earphone-2-DDRmRY65.png"
+                  />
+                  <source
+                    media="(min-width: 744px)"
+                    srcset="/layout_landing-page/assets/earphone-2-tablet-CvCzkBQm.png"
+                  />
+                  <img
+                    class="categories__img"
+                    src="/layout_landing-page/assets/earphone-2-mobile-Q5tpXyBI.png"
+                    alt="earphone-2"
+                  />
+                </picture>
+              </a>
+            </div>
+            <h3 class="categories__item-title">Earphones</h3>
+          </li>
+
+          <li class="categories__item">
+            <div class="categories__pictures">
+              <a
+                href="#"
+                class="categories__link"
+              >
+                <picture class="categories__picture">
+                  <source
+                    media="(min-width: 1260px)"
+                    srcset="/layout_landing-page/assets/smart-home-1-CsOwRQH0.png"
+                  />
+                  <source
+                    media="(min-width: 744px)"
+                    srcset="/layout_landing-page/assets/smart-home-1-tablet-CJKN_O7n.png"
+                  />
+                  <img
+                    class="categories__img"
+                    src="/layout_landing-page/assets/smart-home-1-mobile-BRjTE9Nw.png"
+                    alt="smart-home-1"
+                  />
+                </picture>
+              </a>
+
+              <a
+                href="#"
+                class="categories__link"
+              >
+                <picture class="categories__picture">
+                  <source
+                    media="(min-width: 1260px)"
+                    srcset="/layout_landing-page/assets/smart-home-2-9-Z1OAJI.png"
+                  />
+                  <source
+                    media="(min-width: 744px)"
+                    srcset="/layout_landing-page/assets/smart-home-2-tablet-mb7H69Q7.png"
+                  />
+                  <img
+                    class="categories__img"
+                    src="data:image/png;base64,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"
+                    alt="smart-home-2"
+                  />
+                </picture>
+              </a>
+            </div>
+            <h3 class="categories__item-title">Smart Home</h3>
+          </li>
+
+          <li class="categories__item categories__item--actions">
+            <a
+              href="#"
+              class="categories__btn btn"
+            >
+              View all
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="about-us main__section"
+        id="about-us"
+      >
+        <a href="#">
+          <picture class="about-us__picture">
+            <source
+              media="(min-width: 1260px)"
+              srcset="/layout_landing-page/assets/about-us-DM1sDOeM.png"
+            />
+            <source
+              media="(min-width: 744px)"
+              srcset="/layout_landing-page/assets/about-us-bg-tablet-D_TBJq8d.png"
+            />
+            <img
+              class="about-us__img"
+              src="/layout_landing-page/assets/about-us-bg-mobile-BknKybQX.png"
+              alt="about us"
+            />
+          </picture>
+        </a>
+
+        <div class="about-us__content">
+          <h2 class="main-title about-us__text">
+            Timeless, for 50 years and counting
+          </h2>
+          <p class="about-us__desc about-us__text">
+            Bang & Olufsen is expanding its Recreated Classics Program with the
+            launch of Beosystems – a limited edition music system that
+            transcends time by bridging the gap between one of our iconic
+            designs from 1972 and today’s cutting-edge digital technology.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h2 class="main-title contacts__title">Contact us</h2>
+      <div class="footer__wrapper">
+        <div
+          class="footer__row"
+          id="contacts"
+        >
+
+
+          <form
+            class="form footer__form"
+            onsubmit="this.reset(); return false;"
+          >
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              placeholder="Name"
+              autocomplete="given-name"
+              required
+            />
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+            />
+            <textarea
+              class="form__input form__input--textarea"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button
+              class="form__submit btn"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+
+        <ul class="footer__list footer__row">
+          <li class="footer__item">
+            <span class="footer__title">Phone</span>
+            <a
+              href="tel:+1 234 5555-55-55"
+              class="footer__link"
+            >
+              +1 234 5555-55-55
+            </a>
+          </li>
+          <li class="footer__item">
+            <span class="footer__title">Email</span>
+            <a
+              href="mailto:hello@bang&olufsen.com"
+              class="footer__link"
+            >
+              hello@bang&olufsen.com
+            </a>
+          </li>
+          <li class="footer__item">
+            <span class="footer__title">Address</span>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query==400+first+ave+suite+700+Minneapolis+MN+55401"
+              class="footer__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              400 first ave.
+              <br />
+              suite 700
+              <br />
+              Minneapolis, MN 55401
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
